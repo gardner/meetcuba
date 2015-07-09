@@ -1,0 +1,4 @@
+ExpiresActive on
+<FilesMatch "\.(gif|jpe?g|png|css|js)$">
+    ExpiresDefault "access plus 2 weeks"
+</FilesMatch>

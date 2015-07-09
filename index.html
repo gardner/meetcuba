@@ -1,8 +1,90 @@
 <html>
 <head>
-	<meta name="google-site-verification" content="sLtvbplkq9u-x7vXdbBfMF6G0edidQfO5diFHlW1MfY" />
+	<style>
+		html {
+		  background: url(img/bg.jpg) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+			text-shadow: black 0px 0px 10px;
+			color: white;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		}
+		a {
+			color: #ccc;
+		}
+		/* This parent can be any width and height */
+		.block {
+		  text-align: center;
+
+		  /* May want to do this if there is risk the container may be narrower than the element inside */
+		  white-space: nowrap;
+		}
+ 
+		/* The ghost, nudged to maintain perfect centering */
+		.block:before {
+		  content: '';
+		  display: inline-block;
+		  height: 100%;
+		  vertical-align: middle;
+		  margin-right: -0.25em; /* Adjusts for spacing */
+		}
+
+		/* The element to be centered, can also be of any width and height */ 
+		.centered {
+		  text-align: left;			
+			margin: auto;
+		  display: inline-block;
+		  vertical-align: middle;
+/*		  width: 300px;*/
+		}		
+	</style>
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="//www.meetcuba.co/piwik/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 1]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+	<noscript><p><img src="//www.meetcuba.co/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
 </head>
 <body>
-	MeetCuba.co
+	<div class="block">
+		<div class="centered">
+		<h1>Meet Cuba</h1>
+		Travel to Cuba legally. Have amazing people-to-people<br />
+		experiences through meaningful interactions with Cubans.<br />
+		Learn about the culture and technology. Get to know Cuba.<br />
+		
+		<br /><br /><br />
+		
+		<h3>Stay Informed</h3>
+		<form method="post" action="https://scripts.dreamhost.com/add_list.cgi">
+			<input type="hidden" name="list" value="gardner" />
+			<input type="hidden" name="domain" value="meetcuba.co" />
+			<input type="hidden" name="emailit" value="1" />
+			<input type="text" name="email" placeholder="Your email"/>
+			<input type="submit" name="submit" value="stay informed" /><br />
+			<sub>
+				We do not share your data with anyone.<br />
+				See our <a href="privacy.html" target="_blank">Privacy Policy</a> for more information.
+			</sub>
+		</form>
+
+		<br /><br /><br />
+
+		<h5>Contact Us</h5>
+		email: <a href="mailto:info@meetcuba.co">info@meetcuba.co</a><br />
+		phone: <a href="tel:+1.415.832.9401">415.832.9401</a>
+	</div>
+</div>
 </body>
 </html>
